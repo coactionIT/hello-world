@@ -1,0 +1,48 @@
+// Example from WileyPlus Chapter 5
+
+package chapter5;
+
+/*
+ * Write the following methods and provide a program to test them.
+ * a) double smallest(double x, double y, double z), returning the smallest of the arguments
+ * b) double average(double x, double y, double z), returning the average of the arguments
+ */
+/*
+ * 
+ */
+
+import java.util.Scanner;
+
+public class SmallestMethod 
+{
+// a) return the smallest double value of the 3 arguments x, y, and z
+
+	public static void main(String[] args) 
+	{
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Enter three numbers: ");
+		double x = in.nextDouble();//book had a?
+		double y = in.nextDouble();//book had b?
+		double z = in.nextDouble();//book had c?
+		
+		System.out.println("The smallest number is: " + smallest(x, y, z));//methodName?
+	}
+
+	public static double smallest(double x, double y, double z)
+	{
+		if(x <= y && x <= z)
+		{
+			return x;
+		}
+		if(y <= x && y <= z)
+		{
+			return y;
+		}
+		else
+		{
+			return z;
+		}
+	}
+}
+// Prompts user for 3 numbers, then displays the smallest of the three numbers to the screen.
